@@ -7,6 +7,8 @@ const learningCenterTextElements = require('./data/LearningCenterTextElements');
 
 app.use(express.json());
 
+app.use(express.static("public"))
+
 app.use(cors());
 
 app.set('port', process.env.PORT || 3001);
